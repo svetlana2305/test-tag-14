@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Beispiel – Steckbrief</title>
+  <style>
+    :root {
+      --dunkelblau: #0F2A4A;
+      --hellblau: #DCEBF7;
+      --akzent: #5B9BD5;
+      --text: #1F2933;
+      --text-leise: #52606D;
+      --hintergrund: #F7FAFC;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--hintergrund);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--dunkelblau);
+      color: #fff;
+      text-align: center;
+      padding: 64px 16px 56px;
+    }
+
+    .initialen {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      border: 3px solid var(--akzent);
+      background: var(--hellblau);
+      color: var(--dunkelblau);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .rolle {
+      margin: 8px 0 0;
+      font-size: 1.125rem;
+      color: var(--hellblau);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 56px 16px 64px;
+    }
+
+    h2 {
+      margin: 0 0 24px;
+      font-size: 1.5rem;
+      color: var(--dunkelblau);
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--akzent);
+      display: inline-block;
+    }
+
+    .karten {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .karte {
+      background: #fff;
+      border: 1px solid var(--hellblau);
+      border-top: 4px solid var(--akzent);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .nummer {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--hellblau);
+      color: var(--dunkelblau);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .karte h3 {
+      margin: 0 0 8px;
+      font-size: 1.125rem;
+      color: var(--dunkelblau);
+    }
+
+    .karte p {
+      margin: 0;
+      color: var(--text-leise);
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 16px 40px;
+      color: var(--text-leise);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="initialen" aria-hidden="true">AB</div>
+    <h1>Alex Beispiel</h1>
+    <p class="rolle">Sachbearbeitung Einkauf · Nordlicht Leuchten GmbH</p>
+  </header>
+
+  <main>
+    <h2>Im Kurs mit KI gebaut</h2>
+    <ol class="karten">
+      <li class="karte">
+        <span class="nummer">1</span>
+        <h3>Angebots-Ablauf</h3>
+        <p>n8n legt für neue Anfragen einen Antwortentwurf an.</p>
+      </li>
+      <li class="karte">
+        <span class="nummer">2</span>
+        <h3>Skill für Anfragen</h3>
+        <p>Claude beantwortet Kundenfragen nach unseren Regeln.</p>
+      </li>
+      <li class="karte">
+        <span class="nummer">3</span>
+        <h3>Lernplan</h3>
+        <p>Jeden Montag fünf Prüfungsfragen zu meinem Fachthema.</p>
+      </li>
+    </ol>
+  </main>
+
+  <footer>Steckbrief · 2026</footer>
+</body>
+</html>
